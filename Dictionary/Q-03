@@ -1,0 +1,7 @@
+Q3-Write a program to get the maximum and minimum value of dictionary.
+
+
+d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+l1=list(d.values())
+print(max(l1))
+print(min(l1))
