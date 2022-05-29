@@ -1,0 +1,10 @@
+Q3-How do I count the number of times a function is called in Python?
+
+
+count = 0;
+def f():
+   global count;
+   count=count+1;
+   print(count)
+   f()
+f()
