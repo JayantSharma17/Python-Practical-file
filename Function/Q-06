@@ -1,0 +1,18 @@
+Q6-Write a function prodDigits() that inputs a number and returns the product of digits of that number.
+
+def prodDigit(num):
+    """
+    Returns the product of digits of given number
+    """
+    temp = num
+    prod = 1
+    while temp > 0:
+        digit = temp % 10
+        prod *= digit
+        temp //= 10
+    return prod
+
+
+# num = int(input("Enter a number: "))
+num = 54
+print("Product of all digits of {0} is: {1}".format(num, prodDigit(num)))
